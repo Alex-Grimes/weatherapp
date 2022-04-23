@@ -29,25 +29,12 @@ h1{
   font-size: 6rem;
 }
 
-.app{
+.app {
   width: 100%;
   height: 100vh;
   position: relative;
   background-color: rgba(0,0,0,0.4);
   color: #fff;
-}
-
-
-
-.app::before{
-  content: '';
-  /*background: url('./assets/sunset.jpg') no-repeat center center/cover;*/
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .container {
@@ -62,7 +49,17 @@ h1{
   justify-content: space-between;
 }
 
-.app.top {
+.app:before {
+  content: '';
+  background: url('./assets/blake-verdoorn-cssvEZacHvQ-unsplash.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.app .top {
   width: 100%;
   margin: 1rem auto;
 }
@@ -73,3 +70,38 @@ h1{
   transform-origin: 0 0;
   transform: rotate(270deg);
 }
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.2);
+}
+.bold{
+  font-weight: 700;
+}
+
+.app .search {
+
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input {
+  padding: .7rem 1.5rem;
+  font-size:  1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.8);
+  background: #f8f8f8;
+}
+
+::placeholder {
+  color: #000;
+}
+
+
+
